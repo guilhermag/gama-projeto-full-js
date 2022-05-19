@@ -1,57 +1,54 @@
-const webpack = require('webpack');
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const webpack = require("webpack");
+const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
-const pathToMainJs = require.resolve('./src/app.js');
-const pathToIndexCss = require.resolve('./src/css/style.css');
-const pathToIndexHtml = require.resolve('./src/index.html')
-const pathToIndexFavicon = require.resolve('./src/img/favicon.ico')
+const pathToMainJs = require.resolve("./src/app.js");
+const pathToIndexCss = require.resolve("./src/css/style.css");
+const pathToIndexHtml = require.resolve("./src/index.html");
+const pathToIndexFavicon = require.resolve("./src/img/favicon.ico");
 
-
-module.exports = { 
+module.exports = {
   entry: [
-    '@babel/polyfill',
+    "@babel/polyfill",
     pathToMainJs,
     pathToIndexCss,
     pathToIndexHtml,
-    pathToIndexFavicon
+    pathToIndexFavicon,
   ],
-  plugins: [
-    new CleanWebpackPlugin()
-  ],
+  plugins: [new CleanWebpackPlugin()],
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'app.js',
-    publicPath: '/'
+    path: path.resolve(__dirname, "dist"),
+    filename: "app.js",
+    publicPath: "/",
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        use: 'babel-loader',
-        exclude: /node_modules/
+        use: "babel-loader",
+        exclude: /node_modules/,
       },
       {
         test: /\.(css|sass|scss)$/i,
-        type:'asset/resource',
+        type: "asset/resource",
         generator: {
-          filename: 'css/[name][ext][query]'
-        }
+          filename: "css/[name][ext][query]",
+        },
       },
       {
         test: /\.html$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
         generator: {
-          filename: '[name][ext][query]'
-        }
+          filename: "[name][ext][query]",
+        },
       },
       {
         test: /\.(png|jpg|ico|jpeg|gif|svg)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
         generator: {
-          filename: 'img/[name][ext][query]'
-        }
-      }
-    ]
+          filename: "img/[name][ext][query]",
+        },
+      },
+    ],
   },
 };
