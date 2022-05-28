@@ -1,17 +1,69 @@
-/* Error: expected "{".
- *    ,
- * 34 |   aula parou em 1:11
- *    |                     ^
- *    '
- *   src\assets\sass\style.scss 34:21  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 34 \2502    aula parou em 1:11\d\a    \2502                      ^\a    \2575 \a   src\\assets\\sass\\style.scss 34:21  root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+* {
+  padding: 0;
+  margin: 0;
 }
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  background-color: red;
+  color: white;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 300px;
+  height: 400px;
+  padding: 50px;
+  border-radius: 12px;
+  background-color: gray;
+}
+.card .title {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: "bold";
+  font-size: 24px;
+}
+.card .image {
+  max-width: 280px;
+  height: auto;
+}
+.card .button {
+  padding: 50px;
+  border-radius: 12px;
+  color: white;
+  transition: 0.3s;
+}
+.card .button._danger {
+  background-color: red;
+}
+.card .button._danger:hover {
+  background-color: orange;
+}
+.card .button._success {
+  background-color: green;
+}
+.card .button._success:hover {
+  background-color: purple;
+}
+
+#contact > input[type=text] {
+  background-color: black;
+  color: white;
+}
+#contact > input[type=submit] {
+  background-color: purple;
+  color: white;
+  transition: 0.3s;
+  padding: 30px;
+  border-radius: 10px;
+}
+#contact > input[type=submit]:hover {
+  background-color: white;
+  color: purple;
+}
+
+/*# sourceMappingURL=style.css.map */

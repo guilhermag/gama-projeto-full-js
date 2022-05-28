@@ -12,10 +12,16 @@ body {
   color: $textColor;
 }
 
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 .card {
   max-width: 300px;
   height: 400px;
   padding: $paddingDefault + $paddingDefault;
+  border-radius: $borderRadiusDefault;
   background-color: gray;
   
   .title {
@@ -24,14 +30,28 @@ body {
     font-size: 24px;
   }
   .image {
-    height: 300px;
+    max-width: 280px;
+    height: auto;
   }
   .button {
-    & ._danger{}
-    & ._success{}
+    padding: $paddingDefault + $paddingDefault;
+    border-radius: $borderRadiusDefault;
+    color: white;
+    transition: $transitionSpeed;
+    &._danger {
+      background-color: red;
+      &:hover{
+        background-color: orange;
+      }
+    }
+    &._success {
+      background-color: green;
+      &:hover{
+        background-color: purple;
+      }
+    }
   }
 
-  aula parou em 1:11
 }
 
 #contact {

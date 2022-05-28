@@ -6,11 +6,13 @@ let Home = {
   render: async () => {
     let view = `
       ${Nav}
-      <div>
+      <div class="container">
         <h1>Home page</h1>
+        
         <div class="card">
           <p class="title">Este é o meu CARD</p>
-          <img src=${Bulba} alt="imagem qualquer" class="image">
+          <img src=${Bulba} alt="pokemon bulba" class="image">
+          <button class="button _danger">Clique aqui que nada acontece</button>
         </div>
       </div>
       ${Footer}
