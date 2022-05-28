@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+@import "./variables.scss";
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: $fontDefault;
+  background-color: $bgColor;
+  color: $textColor;
+}
+
+.card {
+  max-width: 300px;
+  height: 400px;
+  padding: $paddingDefault + $paddingDefault;
+  background-color: gray;
+  
+  .title {
+    font-family: $fontDefault;
+    font-weight: 'bold';
+    font-size: 24px;
+  }
+  .image {
+    height: 300px;
+  }
+  .button {
+    & ._danger{}
+    & ._success{}
+  }
+
+  aula parou em 1:11
+}
+
+#contact {
+  & > input[type="text"] {
+    background-color: black;
+    color: $textColor;
+  }
+  & > input[type="submit"] {
+    background-color: purple;
+    color: white;
+    transition: 0.3s;
+    padding: 30px;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: white;
+      color: purple;
+    }
+  }
+}
