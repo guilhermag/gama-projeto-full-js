@@ -14,7 +14,7 @@ O objetivo desse projeto foi colocar em prática os conhecimentos adquiridos dur
 
 O projeto foi feito durante as aulas para ter um estilo que lembre o próprio site do [iCarros](https://www.icarros.com.br/principal/index.jsp).
 
-Até o momento utilizando conceitos básicos de html, css e javascript, dando importâncias também a semântica do html, metatags de OpenGraph, metatags para os buscadores e integração com o google search console e hotjar.
+Nessa aula foram ensinados os conceitos necessários para criar um projeto utilizando Webpack.
 
 ## Preview do projeto
 
