@@ -34,7 +34,7 @@ Nessa aula foram ensinados os conceitos necessários para criar um projeto utili
 
 ### Acessar o site do Projeto
 
-O projeto está hospedado no Netilify, podendo ser acessado por esse [link](https://icarros-gama-exc01-front-guilherme-gabriel.netlify.app/).
+O projeto está hospedado no Netilify, podendo ser acessado por esse [link](https://icarros-gama-exc02-fulljs-guilherme-gabriel.netlify.app/).
 
 ## Créditos
 
